@@ -23,3 +23,8 @@ export const InputText = styled.input`
     border: 0;
     height: 3rem;
 `
+export const ErrorText = styled.p`
+    color: #FF0000;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+`
