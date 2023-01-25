@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
     Container,
     Row,
@@ -13,6 +14,17 @@ import Button from "../button/index";
 import Logo from "../../assets/logo-dio.png";
 
 const Header = ({ authenticated }) => {
+
+    const navigate = useNavigate();
+
+    const toLogin = () =>{
+        navigate('/login')
+    };
+
+    const createAccount = () =>{
+        navigate('/create')
+    };
+    
     return (
         <Wrapper>
             <Container>
@@ -34,8 +46,8 @@ const Header = ({ authenticated }) => {
                     ) : (
                         <>
                             <MenuRight href="#">Home</MenuRight>
-                            <Button title={"Entrar"} />
-                            <Button title={"Cadastrar"} />
+                            <Button title={"Entrar"} onClick={toLogin} />
+                            <Button title={"Cadastrar"}  onClick={createAccount}/>
                         </>
                     )}
                 </Row>

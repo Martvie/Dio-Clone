@@ -40,9 +40,12 @@ const onSubmit = async (formData) => {
 
         alert('Usuário ou senha inválido')
     }catch(e){
-        //TODO: HOUVE UM ERRO
     }
 };
+
+const toCreate = () => {
+    navigate('/create');
+}
 
     return (
         <>
@@ -65,7 +68,7 @@ const onSubmit = async (formData) => {
                     </form>
                     <Row>
                         <ForgetText>Esqueci minha senha</ForgetText>
-                        <CreateText>Criar conta</CreateText>
+                        <CreateText onClick={toCreate}>Criar conta</CreateText>
                     </Row>
                 </Wrapper>
                 </Column>

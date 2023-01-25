@@ -49,6 +49,11 @@ export const ForgetText = styled.p`
     line-height: 1.9rem;
 
     color: #e5e044;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
 `
 
 export const CreateText = styled.p`
@@ -59,6 +64,11 @@ export const CreateText = styled.p`
     line-height: 1.9rem;
 
     color: #23dd7a;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
 `
 
 export const Wrapper = styled.main`
@@ -67,6 +77,11 @@ export const Wrapper = styled.main`
 
 export const Column = styled.div`
     flex: 1;
+
+    &:last-child{
+        display: flex;
+        justify-content: end;
+    }
 `
 
 export const Row = styled.div`

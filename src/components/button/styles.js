@@ -9,6 +9,7 @@ export const ButtonContainer = styled.button `
     padding: 0.2rem 1.2rem;
     min-width: 12rem;
     width: 100%;
+    max-width: 28rem;
     
     &:hover {
         cursor: pointer;
